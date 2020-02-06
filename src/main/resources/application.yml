@@ -11,6 +11,6 @@ fdfs:
   thumb-image:             #\u7F29\u7565\u56FE\u751F\u6210\u53C2\u6570
     width: 150
     height: 150
-  web-server-url: 192.168.130.130/
+  web-server-url: 47.75.103.255/
   tracker-list:
-    - 192.168.130.130:22122     #\u5982\u679C\u6709\u591A\u4E2Atracker\u8282\u70B9\u53EF\u4EE5\u6DFB\u52A0\u591A\u884C
+    - 47.75.103.255:22122     #\u5982\u679C\u6709\u591A\u4E2Atracker\u8282\u70B9\u53EF\u4EE5\u6DFB\u52A0\u591A\u884C
