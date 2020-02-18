@@ -14,3 +14,12 @@ fdfs:
   web-server-url: 47.75.103.255/
   tracker-list:
     - 47.75.103.255:22122     #\u5982\u679C\u6709\u591A\u4E2Atracker\u8282\u70B9\u53EF\u4EE5\u6DFB\u52A0\u591A\u884C
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB         # 单个文件上传大小
+      max-request-size: 100MB     # 中文件上传大小
+  thymeleaf:
+    cache: false
+
+

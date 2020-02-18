@@ -34,13 +34,19 @@ public class FastDfsController {
     @RequestMapping("/upload")
     public Map<String,Object> upload(MultipartFile file) throws Exception{
 
-        String url = fdfsClient.uploadFile(file);
-
         Map<String,Object> result = new HashMap<>();
-        result.put("code", 200);
-        result.put("msg", "上传成功");
-        result.put("url", url);
 
+        long size = file.getSize();
+        System.out.println("文件大小为："+size);
+        if(size>10*1024*1024){
+            result.put("code", 500);
+            result.put("msg", "上传失败,文件最大为10MB");
+        }else {
+            String url = fdfsClient.uploadFile(file);
+            result.put("code", 200);
+            result.put("msg", "上传成功");
+            result.put("url", url);
+        }
         return result;
     }
 
